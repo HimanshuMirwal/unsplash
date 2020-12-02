@@ -1,0 +1,49 @@
+.ImageList{
+    height:auto;
+    width: 80%;
+    margin: auto;
+}
+.MainImageList{
+    width: 100%;
+    margin:auto;
+}
+.card-title{
+    color:firebrick;
+    font-size:30px;
+    font-weight: bold;
+}
+.card-text{
+    color:gray;
+    font-weight: bold;
+    line-height: 100%
+}
+.card{
+    margin:auto;
+    padding:2%;
+}
+.card-group{
+    margin-top:5%;
+    text-align: center;
+}
+/* ------------------------------Scrollbar Styles----------------------------------- */
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(178, 34, 34, 0.808); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: firebrick; 
+  }

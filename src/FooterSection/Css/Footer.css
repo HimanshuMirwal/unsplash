@@ -1,0 +1,10 @@
+.Footer{
+    height: 150px;
+    width:100%;
+    background:firebrick;
+}
+.maincontent-Footer{
+    color:white;
+    text-align:center;
+    line-height: 150px;
+}

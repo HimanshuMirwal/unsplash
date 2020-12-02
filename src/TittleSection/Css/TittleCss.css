@@ -1,0 +1,20 @@
+*{
+    padding:0;
+    margin:0;
+}
+.Tittle{
+   /* border:1px solid; */
+}
+.TittleImage{
+    margin-left: 93px;
+    margin-top:20px;
+}
+@media only screen and (max-width: 1326px) {
+    .Tittle{
+        /* border:1px solid; */
+     }
+     .TittleImage{
+        margin-left: 5%;
+        margin-top: 3%;
+     }
+}
