@@ -5,16 +5,20 @@ import ImageList from "./ImageListSection/ImageList";
 import Footer from "./FooterSection/Footer";
 
 import data from "./APICALL/ApiCall";
+import dataPexel from "./APICALL/ApiCallPexels";
 function App() {
-  const [dataAPI, setDataApi] = useState({results:data});
-  function GetData(data){
-    setDataApi(data);
+  const [dataAPIUnsplash, setDataApiUnsplash] = useState({results:data});
+  const [dataAPIPexel, setDataApiPexel] = useState({photos:dataPexel});
+
+  function GetData(data,pexelsData){
+    setDataApiUnsplash(data);
+    setDataApiPexel(pexelsData);
   }
   return (
     <div className="App">
         <Tittle />
         <Searchbar addDataAPI={GetData} />
-        <ImageList  DataFromAPI = {dataAPI} />
+        <ImageList key={dataAPIUnsplash+dataAPIPexel} DataFromAPI = {dataAPIUnsplash} DataFromApiPexel={dataAPIPexel} />
         <Footer />
     </div>
   );
